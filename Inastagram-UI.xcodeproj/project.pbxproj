@@ -16,6 +16,7 @@
 		E3B58ADC25EC799D004EE200 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B58ADB25EC799D004EE200 /* CameraView.swift */; };
 		E3B58ADF25EC79AC004EE200 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B58ADE25EC79AC004EE200 /* NotificationsView.swift */; };
 		E3B58AE225EC79B9004EE200 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B58AE125EC79B9004EE200 /* ProfileView.swift */; };
+		E3EB6D8E25EDC5B700BFD79C /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EB6D8D25EDC5B700BFD79C /* StoriesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E3B58ADB25EC799D004EE200 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		E3B58ADE25EC79AC004EE200 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		E3B58AE125EC79B9004EE200 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E3EB6D8D25EDC5B700BFD79C /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +84,23 @@
 		E3B58AD625EC797A004EE200 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E3EB6D8C25EDC59000BFD79C /* Home */,
 				E3B58AC525EC78E6004EE200 /* ContentView.swift */,
-				E3B58AD325EC7966004EE200 /* HomeFeedView.swift */,
 				E3B58AD825EC798B004EE200 /* ExploreView.swift */,
 				E3B58ADB25EC799D004EE200 /* CameraView.swift */,
 				E3B58ADE25EC79AC004EE200 /* NotificationsView.swift */,
 				E3B58AE125EC79B9004EE200 /* ProfileView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E3EB6D8C25EDC59000BFD79C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E3B58AD325EC7966004EE200 /* HomeFeedView.swift */,
+				E3EB6D8D25EDC5B700BFD79C /* StoriesView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3EB6D8E25EDC5B700BFD79C /* StoriesView.swift in Sources */,
 				E3B58AC625EC78E6004EE200 /* ContentView.swift in Sources */,
 				E3B58AC425EC78E6004EE200 /* Inastagram_UIApp.swift in Sources */,
 				E3B58AD925EC798B004EE200 /* ExploreView.swift in Sources */,
