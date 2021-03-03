@@ -138,6 +138,7 @@ struct PostActionButtonsView: View {
 struct HomeFeedView_Previews: PreviewProvider {
     static var previews: some View {
         HomeFeedView()
-            .preferredColorScheme(/*@START_MENU_TOKEN@*/.light/*@END_MENU_TOKEN@*/)
+            .preferredColorScheme(.dark)
+            
     }
 }
