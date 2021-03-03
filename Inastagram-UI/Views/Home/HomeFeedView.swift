@@ -14,8 +14,8 @@ struct HomeFeedView: View {
                 VStack {
                     StoriesView()
                     
-                    ForEach(0...30, id: \.self) {num in
-                        PostView()
+                    ForEach(1...5, id: \.self) {num in
+                        PostView(userImageName: "person\(num)", imageName: "image\(num)")
                     }
                 }
                 .padding(.bottom, 30)
@@ -27,11 +27,16 @@ struct HomeFeedView: View {
 }
 
 struct PostView: View {
+    let userImageName: String
+    let imageName: String
+    
     var body: some View {
         VStack {
-            PostHeaderView()
+            PostHeaderView(userImageName: userImageName)
             // image
-            Image("Foo")
+            Image(imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 430, height: 430, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .background(Color(.secondarySystemBackground))
             
@@ -70,17 +75,19 @@ struct PostView: View {
 }
 
 struct PostHeaderView: View {
+    let userImageName: String
+    
     var body: some View {
         HStack {
             // user profile picture and username
-            Image(systemName: "person.circle")
+            Image(userImageName)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: .fill)
                 .frame(width: 40, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                .cornerRadius(20)
             
             Text("Brandon Franks")
-                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.blue)
                 .bold()
             
             Spacer()
@@ -131,6 +138,6 @@ struct PostActionButtonsView: View {
 struct HomeFeedView_Previews: PreviewProvider {
     static var previews: some View {
         HomeFeedView()
-            .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+            .preferredColorScheme(/*@START_MENU_TOKEN@*/.light/*@END_MENU_TOKEN@*/)
     }
 }
