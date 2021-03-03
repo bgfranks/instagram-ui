@@ -31,7 +31,7 @@ struct ExploreView: View {
                         ForEach(0...20, id: \.self) {num in
                             let name = imageNames.randomElement() ?? "image1"
                             NavigationLink(
-                                destination: Image(name),
+                                destination: PostView(userImageName: "person1", imageName: name),
                                 label: {
                                     Image(name)
                                         .resizable()
