@@ -29,11 +29,16 @@ struct ExploreView: View {
                 ScrollView {
                     LazyVGrid(columns: columns, content: {
                         ForEach(0...20, id: \.self) {num in
-                            Image(imageNames.randomElement() ?? "image1")
-                                .resizable()
-                                .frame(width: 200, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                                .foregroundColor(Color.red)
+                            let name = imageNames.randomElement() ?? "image1"
+                            NavigationLink(
+                                destination: Image(name),
+                                label: {
+                                    Image(name)
+                                        .resizable()
+                                        .frame(width: 200, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                                        .foregroundColor(Color.red)
+                                })
                         }
                     })
                 }
