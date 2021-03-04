@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E344E9B225F07233006E67DC /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E344E9B125F07233006E67DC /* CaptureView.swift */; };
 		E3B58AC425EC78E6004EE200 /* Inastagram_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B58AC325EC78E6004EE200 /* Inastagram_UIApp.swift */; };
 		E3B58AC625EC78E6004EE200 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B58AC525EC78E6004EE200 /* ContentView.swift */; };
 		E3B58AC825EC78E7004EE200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B58AC725EC78E7004EE200 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E344E9B125F07233006E67DC /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
 		E3B58AC025EC78E6004EE200 /* Inastagram-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inastagram-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B58AC325EC78E6004EE200 /* Inastagram_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inastagram_UIApp.swift; sourceTree = "<group>"; };
 		E3B58AC525EC78E6004EE200 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E344E9B025F07202006E67DC /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E3B58ADB25EC799D004EE200 /* CameraView.swift */,
+				E344E9B125F07233006E67DC /* CaptureView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		E3B58AB725EC78E6004EE200 = {
 			isa = PBXGroup;
 			children = (
@@ -84,10 +95,10 @@
 		E3B58AD625EC797A004EE200 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E344E9B025F07202006E67DC /* Camera */,
 				E3EB6D8C25EDC59000BFD79C /* Home */,
 				E3B58AC525EC78E6004EE200 /* ContentView.swift */,
 				E3B58AD825EC798B004EE200 /* ExploreView.swift */,
-				E3B58ADB25EC799D004EE200 /* CameraView.swift */,
 				E3B58ADE25EC79AC004EE200 /* NotificationsView.swift */,
 				E3B58AE125EC79B9004EE200 /* ProfileView.swift */,
 			);
@@ -174,6 +185,7 @@
 			files = (
 				E3EB6D8E25EDC5B700BFD79C /* StoriesView.swift in Sources */,
 				E3B58AC625EC78E6004EE200 /* ContentView.swift in Sources */,
+				E344E9B225F07233006E67DC /* CaptureView.swift in Sources */,
 				E3B58AC425EC78E6004EE200 /* Inastagram_UIApp.swift in Sources */,
 				E3B58AD925EC798B004EE200 /* ExploreView.swift in Sources */,
 				E3B58ADC25EC799D004EE200 /* CameraView.swift in Sources */,
